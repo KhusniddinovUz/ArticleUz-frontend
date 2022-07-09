@@ -1,12 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$main-color: #08446B;
+$secondary-color: #4D8F6E;
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+
+    input, button {
+        outline: none;
+    }
+
+}
+
+// Utility classes
+.main-bg-color {
+    background: $main-color;
+}
+
+.main-color {
+    color: $main-color
+}
+
+.sec-bg-color {
+    background: $secondary-color;
+}
+
+.sec-color {
+    color: $secondary-color;
 }
 
 .App {
-  font-size: 40px;
+    #Signup {
+        display: flex;
+
+        #form {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 450px;
+            height: 550px;
+            background: white;
+            box-shadow: 0 4px 35px rgba(0, 0, 0, 0.08);
+            border-radius: 40px;
+            padding: 40px 30px;
+
+            & > div:first-child {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 15px;
+            }
+
+            form {
+                .form-group {
+                    margin-top: 30px;
+
+                    .form-text {
+                        margin-bottom: 5px;
+                        line-height: 24px;
+                    }
+
+                    .form-input {
+                        width: 100%;
+                        padding: 10px 15px;
+                        outline: none;
+                        border: 1px solid #ADADAD;
+                        border-radius: 9px;
+                    }
+
+                }
+
+                button {
+                    display: block;
+                    height: 50px;
+                    width: 100%;
+                    margin-top: 40px;
+                    background: $main-color;
+                    border: none;
+                    box-shadow: 0 4px 19px rgba(119, 147, 65, 0.3);
+                    border-radius: 10px;
+                    color: #fff;
+                }
+            }
+        }
+
+        & > div:first-child {
+            width: 50vw;
+            height: 100vh;
+            background: $main-color;
+            position: relative;
+
+            img {
+                position: absolute;
+                left: 30%;
+                top: 30%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        & > div:nth-child(2) {
+            width: 50vw;
+            height: 100vh;
+            background: $secondary-color;
+            position: relative;
+
+            img {
+                position: absolute;
+                bottom: 30%;
+                right: 30%;
+                transform: translate(50%, 50%);
+            }
+        }
+    }
 }
