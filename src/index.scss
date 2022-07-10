@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 $main-color: #08446B;
 $secondary-color: #4D8F6E;
@@ -7,7 +7,7 @@ $secondary-color: #4D8F6E;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: Poppins, sans-serif;
 
     input, button {
         outline: none;
@@ -56,7 +56,7 @@ $secondary-color: #4D8F6E;
 
             form {
                 .form-group {
-                    margin-top: 30px;
+                    margin-top: 25px;
 
                     .form-text {
                         margin-bottom: 5px;
@@ -77,12 +77,20 @@ $secondary-color: #4D8F6E;
                     display: block;
                     height: 50px;
                     width: 100%;
-                    margin-top: 40px;
+                    margin-top: 30px;
                     background: $main-color;
                     border: none;
                     box-shadow: 0 4px 19px rgba(119, 147, 65, 0.3);
                     border-radius: 10px;
                     color: #fff;
+                }
+
+                .signin-button {
+                    margin-top: 50px;
+                }
+
+                .signin {
+                    margin-top: 40px;
                 }
             }
         }

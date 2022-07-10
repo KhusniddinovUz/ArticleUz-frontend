@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Signup = () => {
+const Signin = () => {
     return (<div id='Signup'>
         <div>
             <img src="./images/signup/phase1.png" alt="signup alt" width="300px"/>
@@ -12,29 +12,25 @@ const Signup = () => {
             <div>
                 <p>Welcome to ArticleUz</p>
                 <div>
-                    <p>Have an account?</p>
-                    <p className="main-color" style={{fontWeight: 600, fontSize: "18px"}}>Sign in</p>
+                    <p>No account?</p>
+                    <p className="main-color" style={{fontWeight: 600, fontSize: "18px"}}>Sign up</p>
                 </div>
             </div>
-            <h1>Sign Up</h1>
+            <h1>Sign in</h1>
 
             <form>
-                <div className="form-group">
+                <div className="form-group signin">
                     <p className="form-text">Enter your email address</p>
                     <input type="email" className="form-input" placeholder="Name@example.com"/>
                 </div>
-                <div className="form-group">
-                    <p className="form-text">Enter your username</p>
-                    <input type="text" className="form-input" placeholder="Username"/>
-                </div>
-                <div className="form-group">
+                <div className="form-group signin">
                     <p className="form-text">Enter your password</p>
                     <input type="password" className="form-input" placeholder="Password"/>
                 </div>
-                <button type="submit">Sign up</button>
+                <button type="submit" className='signin-button'>Sign in</button>
             </form>
         </div>
     </div>)
 };
 
-export default Signup;
+export default Signin;
