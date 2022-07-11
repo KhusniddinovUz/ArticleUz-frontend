@@ -13,6 +13,14 @@ $secondary-color: #4D8F6E;
         outline: none;
     }
 
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
 }
 
 // Utility classes
